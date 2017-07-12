@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B15F816A5D6142CC49A4249 /* Pods_LyricaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB2FAABB072BEB96D942175 /* Pods_LyricaUITests.framework */; };
+		46CF9E5E57CF639A6D6D086B /* Pods_Lyrica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF9422BFA6043783EFF6EF9 /* Pods_Lyrica.framework */; };
 		65376E151F140A86007353B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E141F140A86007353B0 /* AppDelegate.swift */; };
 		65376E171F140A86007353B0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E161F140A86007353B0 /* FirstViewController.swift */; };
 		65376E191F140A86007353B0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E181F140A86007353B0 /* SecondViewController.swift */; };
@@ -15,6 +17,9 @@
 		65376E211F140A86007353B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65376E1F1F140A86007353B0 /* LaunchScreen.storyboard */; };
 		65376E2C1F140A86007353B0 /* LyricaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E2B1F140A86007353B0 /* LyricaTests.swift */; };
 		65376E371F140A86007353B0 /* LyricaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E361F140A86007353B0 /* LyricaUITests.swift */; };
+		65376E471F166B16007353B0 /* RhymeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E461F166B16007353B0 /* RhymeViewController.swift */; };
+		65BFEE8D1F1672DD0023A33C /* RhymeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BFEE8C1F1672DD0023A33C /* RhymeDto.swift */; };
+		C332BE7B816DFA847FE88109 /* Pods_LyricaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE211FC37447992695972E4 /* Pods_LyricaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02DF2330441C7DFF7D856829 /* Pods-LyricaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyricaUITests/Pods-LyricaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		246E49A4D5163DC8A780342F /* Pods-LyricaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyricaTests/Pods-LyricaTests.release.xcconfig"; sourceTree = "<group>"; };
 		65376E111F140A86007353B0 /* Lyrica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyrica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65376E141F140A86007353B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65376E161F140A86007353B0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		65376E321F140A86007353B0 /* LyricaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65376E361F140A86007353B0 /* LyricaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricaUITests.swift; sourceTree = "<group>"; };
 		65376E381F140A86007353B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65376E461F166B16007353B0 /* RhymeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeViewController.swift; sourceTree = "<group>"; };
+		65BFEE8C1F1672DD0023A33C /* RhymeDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeDto.swift; sourceTree = "<group>"; };
+		6FF9422BFA6043783EFF6EF9 /* Pods_Lyrica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lyrica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1A622A56C02144B8B02EB9 /* Pods-LyricaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyricaUITests/Pods-LyricaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FE211FC37447992695972E4 /* Pods_LyricaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyricaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9743F215048A19F494E0381C /* Pods-Lyrica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyrica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lyrica/Pods-Lyrica.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8A00D052E476ECDC353DA1 /* Pods-LyricaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyricaTests/Pods-LyricaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6A3B1A1B5FC1EFB01BFEBE1 /* Pods-Lyrica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyrica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lyrica/Pods-Lyrica.release.xcconfig"; sourceTree = "<group>"; };
+		CDB2FAABB072BEB96D942175 /* Pods_LyricaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyricaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CF9E5E57CF639A6D6D086B /* Pods_Lyrica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C332BE7B816DFA847FE88109 /* Pods_LyricaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B15F816A5D6142CC49A4249 /* Pods_LyricaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				65376E2A1F140A86007353B0 /* LyricaTests */,
 				65376E351F140A86007353B0 /* LyricaUITests */,
 				65376E121F140A86007353B0 /* Products */,
+				F5C89A8E4F4F3B56E7B95712 /* Pods */,
+				6BC89C73C2A04F4FB0EBE9EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,8 @@
 			children = (
 				65376E141F140A86007353B0 /* AppDelegate.swift */,
 				65376E161F140A86007353B0 /* FirstViewController.swift */,
+				65BFEE8C1F1672DD0023A33C /* RhymeDto.swift */,
+				65376E461F166B16007353B0 /* RhymeViewController.swift */,
 				65376E181F140A86007353B0 /* SecondViewController.swift */,
 				65376E1A1F140A86007353B0 /* Main.storyboard */,
 				65376E1D1F140A86007353B0 /* Assets.xcassets */,
@@ -128,6 +151,29 @@
 			path = LyricaUITests;
 			sourceTree = "<group>";
 		};
+		6BC89C73C2A04F4FB0EBE9EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FF9422BFA6043783EFF6EF9 /* Pods_Lyrica.framework */,
+				8FE211FC37447992695972E4 /* Pods_LyricaTests.framework */,
+				CDB2FAABB072BEB96D942175 /* Pods_LyricaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5C89A8E4F4F3B56E7B95712 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9743F215048A19F494E0381C /* Pods-Lyrica.debug.xcconfig */,
+				C6A3B1A1B5FC1EFB01BFEBE1 /* Pods-Lyrica.release.xcconfig */,
+				AE8A00D052E476ECDC353DA1 /* Pods-LyricaTests.debug.xcconfig */,
+				246E49A4D5163DC8A780342F /* Pods-LyricaTests.release.xcconfig */,
+				02DF2330441C7DFF7D856829 /* Pods-LyricaUITests.debug.xcconfig */,
+				8B1A622A56C02144B8B02EB9 /* Pods-LyricaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65376E3B1F140A86007353B0 /* Build configuration list for PBXNativeTarget "Lyrica" */;
 			buildPhases = (
+				57539880E3E6C22F58C25F41 /* [CP] Check Pods Manifest.lock */,
 				65376E0D1F140A86007353B0 /* Sources */,
 				65376E0E1F140A86007353B0 /* Frameworks */,
 				65376E0F1F140A86007353B0 /* Resources */,
+				5D719C9F5A5C3C77DF4ED0EE /* [CP] Embed Pods Frameworks */,
+				E2A5218475CA94D70A3861A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65376E3E1F140A86007353B0 /* Build configuration list for PBXNativeTarget "LyricaTests" */;
 			buildPhases = (
+				D45FA728B42D845690CA4962 /* [CP] Check Pods Manifest.lock */,
 				65376E231F140A86007353B0 /* Sources */,
 				65376E241F140A86007353B0 /* Frameworks */,
 				65376E251F140A86007353B0 /* Resources */,
+				CB72A485E5F5BEAAEBED2491 /* [CP] Embed Pods Frameworks */,
+				99ABAD17163B337E07EE9619 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65376E411F140A86007353B0 /* Build configuration list for PBXNativeTarget "LyricaUITests" */;
 			buildPhases = (
+				14A198F1736B75FB9774EEFB /* [CP] Check Pods Manifest.lock */,
 				65376E2E1F140A86007353B0 /* Sources */,
 				65376E2F1F140A86007353B0 /* Frameworks */,
 				65376E301F140A86007353B0 /* Resources */,
+				A86C8AC4C44700168460E1C5 /* [CP] Embed Pods Frameworks */,
+				36B5C7CA117F6B9A4E8C65E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +312,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14A198F1736B75FB9774EEFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36B5C7CA117F6B9A4E8C65E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyricaUITests/Pods-LyricaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57539880E3E6C22F58C25F41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D719C9F5A5C3C77DF4ED0EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lyrica/Pods-Lyrica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99ABAD17163B337E07EE9619 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyricaTests/Pods-LyricaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86C8AC4C44700168460E1C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyricaUITests/Pods-LyricaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB72A485E5F5BEAAEBED2491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyricaTests/Pods-LyricaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45FA728B42D845690CA4962 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A5218475CA94D70A3861A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lyrica/Pods-Lyrica-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65376E0D1F140A86007353B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65376E471F166B16007353B0 /* RhymeViewController.swift in Sources */,
 				65376E191F140A86007353B0 /* SecondViewController.swift in Sources */,
 				65376E151F140A86007353B0 /* AppDelegate.swift in Sources */,
+				65BFEE8D1F1672DD0023A33C /* RhymeDto.swift in Sources */,
 				65376E171F140A86007353B0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +609,7 @@
 		};
 		65376E3C1F140A86007353B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9743F215048A19F494E0381C /* Pods-Lyrica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lyrica/Info.plist;
@@ -426,6 +622,7 @@
 		};
 		65376E3D1F140A86007353B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A3B1A1B5FC1EFB01BFEBE1 /* Pods-Lyrica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lyrica/Info.plist;
@@ -438,6 +635,7 @@
 		};
 		65376E3F1F140A86007353B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE8A00D052E476ECDC353DA1 /* Pods-LyricaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +650,7 @@
 		};
 		65376E401F140A86007353B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246E49A4D5163DC8A780342F /* Pods-LyricaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +665,7 @@
 		};
 		65376E421F140A86007353B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DF2330441C7DFF7D856829 /* Pods-LyricaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LyricaUITests/Info.plist;
@@ -479,6 +679,7 @@
 		};
 		65376E431F140A86007353B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1A622A56C02144B8B02EB9 /* Pods-LyricaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LyricaUITests/Info.plist;
@@ -509,6 +710,7 @@
 				65376E3D1F140A86007353B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65376E3E1F140A86007353B0 /* Build configuration list for PBXNativeTarget "LyricaTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +719,7 @@
 				65376E401F140A86007353B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65376E411F140A86007353B0 /* Build configuration list for PBXNativeTarget "LyricaUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +728,7 @@
 				65376E431F140A86007353B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

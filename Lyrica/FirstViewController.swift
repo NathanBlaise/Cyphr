@@ -97,6 +97,39 @@ class FirstViewController: UIViewController, UITextViewDelegate, UIPickerViewDel
         textEditor.font = UIFont.init(name: fonts[row], size: CGFloat(sizes[row]))
         lineNumber.font = UIFont.init(name: fonts[row], size: CGFloat(sizes[row]))
     }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        if pickerView == fontPicker{
+            var pickerLabel = view as? UILabel;
+        
+            if (pickerLabel == nil)
+            {
+                pickerLabel = UILabel()
+            
+                pickerLabel?.font = UIFont(name: "Montserrat", size: 16)
+                pickerLabel?.textAlignment = NSTextAlignment.center
+            }
+        
+            pickerLabel?.text = fonts[row]
+        
+            return pickerLabel!;
+        }
+        else{
+            var pickerLabel = view as? UILabel;
+            
+            if (pickerLabel == nil)
+            {
+                pickerLabel = UILabel()
+                
+                pickerLabel?.font = UIFont(name: "Montserrat", size: 20)
+                pickerLabel?.textAlignment = NSTextAlignment.center
+            }
+            
+            pickerLabel?.text = String(sizes[row])
+            
+            return pickerLabel!;
+        }
+    }
 
 }
 
