@@ -8,14 +8,15 @@
 
 import UIKit
 import Alamofire
+import Gloss
 
 class RhymeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
+
     var rhymeList =  [RhymeDto]()
-    var maxSylla = [Int]()
+    var rhymeDict = [Int:[String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,13 +41,15 @@ class RhymeViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 if response.result.value != nil{
                     
                     if let result = response.result.value {
-                        let JSON = result as! NSArray
-                        print(JSON)
                         guard let rhymeResults = [RhymeDto].from(jsonArray: result as! [JSON]) else{
                             // handle decoding failure here
                             return
                         }
                         self.rhymeList = rhymeResults
+                        print(self.rhymeList)
+                        for word in self.rhymeList{
+                            self.rhymeDict[word.syllables!]?.append(word.word!)
+                        }
                         self.tableView.reloadData()
                     }}
             case .failure(_):
@@ -65,17 +68,26 @@ class RhymeViewController: UIViewController, UITableViewDelegate, UITableViewDat
             return 0
         }
         else{
-            for word in rhymeList{
-                if (maxSylla.contains(word.syllables) == false){
-                    maxSylla.append(word.syllables)
-                }
-            }
-            return maxSylla.count
+            return rhymeDict.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RhymeTableViewCell
+        var rhymeKeys = [Int]()
+        for (key, value) in rhymeDict{
+            rhymeKeys.append(key)
+        }
+        rhymeKeys = rhymeKeys.sorted()
+        var rhymingWords = rhymeDict[rhymeKeys[indexPath.row]]?.joined(separator: ", ")
+        print(rhymingWords)
+        cell.syllablesTitle.text = String(rhymeKeys[indexPath.row]) + " Syllables"
+        cell.rhymingWords.text = rhymingWords
         
+        
+        
+        
+        return cell
     }
     
 

@@ -18,6 +18,10 @@
 		65376E2C1F140A86007353B0 /* LyricaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E2B1F140A86007353B0 /* LyricaTests.swift */; };
 		65376E371F140A86007353B0 /* LyricaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E361F140A86007353B0 /* LyricaUITests.swift */; };
 		65376E471F166B16007353B0 /* RhymeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376E461F166B16007353B0 /* RhymeViewController.swift */; };
+		65699B661F16D7400005F4BA /* RhymeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65699B651F16D7400005F4BA /* RhymeTableViewCell.swift */; };
+		65699B681F18232E0005F4BA /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65699B671F18232E0005F4BA /* RecordViewController.swift */; };
+		65699B6B1F1839810005F4BA /* play-button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65699B6A1F1839810005F4BA /* play-button-2.png */; };
+		65699B6D1F18B8280005F4BA /* appInstrumental.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65699B6C1F18B8280005F4BA /* appInstrumental.mp3 */; };
 		65BFEE8D1F1672DD0023A33C /* RhymeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BFEE8C1F1672DD0023A33C /* RhymeDto.swift */; };
 		C332BE7B816DFA847FE88109 /* Pods_LyricaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE211FC37447992695972E4 /* Pods_LyricaTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +61,11 @@
 		65376E361F140A86007353B0 /* LyricaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricaUITests.swift; sourceTree = "<group>"; };
 		65376E381F140A86007353B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65376E461F166B16007353B0 /* RhymeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeViewController.swift; sourceTree = "<group>"; };
+		65699B651F16D7400005F4BA /* RhymeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeTableViewCell.swift; sourceTree = "<group>"; };
+		65699B671F18232E0005F4BA /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		65699B691F182CFC0005F4BA /* Lyrica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lyrica.entitlements; sourceTree = "<group>"; };
+		65699B6A1F1839810005F4BA /* play-button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button-2.png"; sourceTree = "<group>"; };
+		65699B6C1F18B8280005F4BA /* appInstrumental.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = appInstrumental.mp3; sourceTree = "<group>"; };
 		65BFEE8C1F1672DD0023A33C /* RhymeDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeDto.swift; sourceTree = "<group>"; };
 		6FF9422BFA6043783EFF6EF9 /* Pods_Lyrica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lyrica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1A622A56C02144B8B02EB9 /* Pods-LyricaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyricaUITests/Pods-LyricaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,14 +129,19 @@
 		65376E131F140A86007353B0 /* Lyrica */ = {
 			isa = PBXGroup;
 			children = (
+				65699B691F182CFC0005F4BA /* Lyrica.entitlements */,
 				65376E141F140A86007353B0 /* AppDelegate.swift */,
 				65376E161F140A86007353B0 /* FirstViewController.swift */,
 				65BFEE8C1F1672DD0023A33C /* RhymeDto.swift */,
 				65376E461F166B16007353B0 /* RhymeViewController.swift */,
+				65699B651F16D7400005F4BA /* RhymeTableViewCell.swift */,
 				65376E181F140A86007353B0 /* SecondViewController.swift */,
 				65376E1A1F140A86007353B0 /* Main.storyboard */,
+				65699B671F18232E0005F4BA /* RecordViewController.swift */,
 				65376E1D1F140A86007353B0 /* Assets.xcassets */,
+				65699B6A1F1839810005F4BA /* play-button-2.png */,
 				65376E1F1F140A86007353B0 /* LaunchScreen.storyboard */,
+				65699B6C1F18B8280005F4BA /* appInstrumental.mp3 */,
 				65376E221F140A86007353B0 /* Info.plist */,
 			);
 			path = Lyrica;
@@ -252,6 +266,11 @@
 					65376E101F140A86007353B0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					65376E261F140A86007353B0 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -292,6 +311,8 @@
 			files = (
 				65376E211F140A86007353B0 /* LaunchScreen.storyboard in Resources */,
 				65376E1E1F140A86007353B0 /* Assets.xcassets in Resources */,
+				65699B6B1F1839810005F4BA /* play-button-2.png in Resources */,
+				65699B6D1F18B8280005F4BA /* appInstrumental.mp3 in Resources */,
 				65376E1C1F140A86007353B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +477,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65376E471F166B16007353B0 /* RhymeViewController.swift in Sources */,
+				65699B661F16D7400005F4BA /* RhymeTableViewCell.swift in Sources */,
 				65376E191F140A86007353B0 /* SecondViewController.swift in Sources */,
+				65699B681F18232E0005F4BA /* RecordViewController.swift in Sources */,
 				65376E151F140A86007353B0 /* AppDelegate.swift in Sources */,
 				65BFEE8D1F1672DD0023A33C /* RhymeDto.swift in Sources */,
 				65376E171F140A86007353B0 /* FirstViewController.swift in Sources */,
@@ -612,6 +635,7 @@
 			baseConfigurationReference = 9743F215048A19F494E0381C /* Pods-Lyrica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Lyrica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathanlewis.Lyrica;
@@ -625,6 +649,7 @@
 			baseConfigurationReference = C6A3B1A1B5FC1EFB01BFEBE1 /* Pods-Lyrica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Lyrica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathanlewis.Lyrica;

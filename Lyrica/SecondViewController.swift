@@ -12,6 +12,9 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:1.00, green:0.75, blue:0.00, alpha:1.0)]
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
