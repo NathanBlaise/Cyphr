@@ -15,7 +15,6 @@ class FirstViewController: UIViewController, UITextViewDelegate, UIPickerViewDel
     @IBOutlet weak var fontPicker: UIPickerView!
     @IBOutlet weak var textEditor: UITextView!
     @IBOutlet weak var lineNumber: UITextView!
-    @IBOutlet weak var sizePicker: UIPickerView!
     @IBOutlet weak var currentWordLabel: UILabel!
     @IBOutlet weak var rhymesTextView: UITextView!
     
@@ -25,21 +24,20 @@ class FirstViewController: UIViewController, UITextViewDelegate, UIPickerViewDel
     var wholeText = ""
     var currentWord = ""
     var rhymingWords = ""
-    let sizes = [12,13,14,15,16,17,18,19,20]
     let fonts = ["Helvetica Neue","Times New Roman","Courier New","Arial"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         textEditor.delegate = self
         lineNumber.delegate = self
-        sizePicker.delegate = self
-        sizePicker.dataSource = self
         fontPicker.delegate = self
         fontPicker.dataSource = self
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:1.00, green:0.75, blue:0.00, alpha:1.0)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:243/255, green:226/255, blue:172/255, alpha:1.0)]
         
-        let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        
+        
+        let borderColor : UIColor = UIColor(red: 53/255, green: 58/255, blue: 93/255, alpha: 1.0)
         textEditor.layer.borderWidth = 0.5
         textEditor.layer.borderColor = borderColor.cgColor
         textEditor.layer.cornerRadius = 5.0
@@ -69,7 +67,7 @@ class FirstViewController: UIViewController, UITextViewDelegate, UIPickerViewDel
         lineNos = 1
         wholeText = textView.text!
         
-        for text in wholeText.characters{
+        for text in wholeText{
             if text == "\n"{
                 lineNos = lineNos + 1
                 textString = ""
@@ -107,59 +105,31 @@ class FirstViewController: UIViewController, UITextViewDelegate, UIPickerViewDel
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView == sizePicker{
-            return sizes.count
-        }
-        else{
             return fonts.count
-        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView == sizePicker{
-            return String(sizes[row])
-        }
-        else{
             return fonts[row]
-        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        textEditor.font = UIFont.init(name: fonts[row], size: CGFloat(sizes[row]))
-        lineNumber.font = UIFont.init(name: fonts[row], size: CGFloat(sizes[row]))
+        textEditor.font = UIFont.init(name: fonts[row], size: 14)
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        if pickerView == fontPicker{
-            var pickerLabel = view as? UILabel;
+        var pickerLabel = view as? UILabel;
+    
+        if (pickerLabel == nil)
+        {
+            pickerLabel = UILabel()
         
-            if (pickerLabel == nil)
-            {
-                pickerLabel = UILabel()
-            
-                pickerLabel?.font = UIFont(name: "Montserrat", size: 16)
-                pickerLabel?.textAlignment = NSTextAlignment.center
-            }
-        
-            pickerLabel?.text = fonts[row]
-        
-            return pickerLabel!;
+            pickerLabel?.font = UIFont(name: "Montserrat", size: 16)
+            pickerLabel?.textAlignment = NSTextAlignment.center
         }
-        else{
-            var pickerLabel = view as? UILabel;
-            
-            if (pickerLabel == nil)
-            {
-                pickerLabel = UILabel()
-                
-                pickerLabel?.font = UIFont(name: "Montserrat", size: 20)
-                pickerLabel?.textAlignment = NSTextAlignment.center
-            }
-            
-            pickerLabel?.text = String(sizes[row])
-            
-            return pickerLabel!;
-        }
+    
+        pickerLabel?.text = fonts[row]
+    
+        return pickerLabel!;
     }
     
     func getRhymes(){

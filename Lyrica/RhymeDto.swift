@@ -9,7 +9,7 @@
 import Foundation
 import Gloss
 
-class RhymeDto: Decodable{
+class RhymeDto: Glossy{
     var word: String?
     var score: Int?
     var syllables: Int?
@@ -24,6 +24,14 @@ class RhymeDto: Decodable{
         self.word = word
         self.score = score
         self.syllables = syllables
+    }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "word" ~~> self.word,
+            "score" ~~> self.score,
+            "syllables" ~~> self.syllables
+            ])
     }
     
 }

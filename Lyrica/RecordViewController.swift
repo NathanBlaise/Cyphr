@@ -24,9 +24,9 @@ class RecordViewController: UIViewController, AVAudioPlayerDelegate, AVAudioReco
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:1.00, green:0.75, blue:0.00, alpha:1.0)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:243/255, green:226/255, blue:172/255, alpha:1.0)]
         
-        let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        let borderColor : UIColor = UIColor(red: 53/255, green: 58/255, blue: 93/255, alpha: 1.0)
         textDisplay.layer.borderWidth = 0.5
         textDisplay.layer.borderColor = borderColor.cgColor
         textDisplay.layer.cornerRadius = 5.0
